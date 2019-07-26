@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation</title>
+</head>
+<body>
+<form method="post" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h3>{{ from.name }}</h3>
+    <h3>{{ from.name }}</h3>
+    <h3>{{ from.name }}</h3>
+    <h3>{{ from.name }}</h3>
+    <input type="submit" value="Submit">
+</form>
+</body>
+{% endblock %}
+</html>

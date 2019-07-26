@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+
+        a:hover
+          {
+            text-decoration: None;
+          }
+    </style>
+
+
+    </head>
+<body>
+
+<div class="container-fluid">
+    <div class="alert alert-info" >
+        <a href="{% url 'hotelapp:hotel' %}" class="alert-link" role="button" style="font-size:14px">HotelTaj</a>
+        <a href="{% url 'hotelapp:home' %}" class="alert-link" role="button" style="font-size:14px">&nbsp;&nbsp;&nbsp;Home</a>
+        <a href="{% url 'hotelapp:customer' %}" class="alert-link" role="button" style="font-size:14px">&nbsp;Customers</a>
+        <a href="{% url 'hotelapp:receipt' %}" class="alert-link" role="button" style="font-size:14px">&nbsp;&nbsp;Receipt</a>
+        <a href="{% url 'admin:index' %}" class="alert-link" role="button" style="font-size:14px">&nbsp;&nbsp;Admin</a>&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="{% url 'hotelapp:create' %}"> <button type="button" class="btn btn-success">Add User</button></a>
+    </div>
+</div>
+</body>
+{% block content %}
+{% endblock %}
+</html>

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Receipt</title>
+</head>
+<body>
+<div class="container">
+<table class="table table-striped"><tr>
+    <th>Name</th>
+     </tr>
+    {% for rec in customer_list %}
+    <tr><td>{{rec.name}}</td>
+        <td><a href="{{rec.id}}">check</a></td> </tr>
+    {% endfor %}
+
+
+
+</table>
+</div>
+</body>
+</html>
+{% endblock %}

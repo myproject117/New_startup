@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Delete</title>
+</head>
+<body>
+  <div class="container">
+
+   <form method="post" enctype="multipart/form-data">
+       <h2>Are You Sure To Delete  "{{customer.name}}" Profile ???</h2><br/>
+     {% csrf_token %}
+     {{form.as_p}}
+     <input type="submit" value="Yes DELETE" class="btn btn-info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a href="{% url 'hotelapp:customer' %}"><button type="button" class="btn btn-success" >No CANCEL</button></a>
+   </form>
+  </div>
+</body>
+{% endblock %}
+</html>

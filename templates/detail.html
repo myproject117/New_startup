@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+<div class="container" align="center">
+    <div class="jumbotorn">
+    <h2>Details of {{customer.name}} is ::</h2>
+    <img src="{{customer.idproof.url}}" width="420" height="230" align="center">
+        <em><h3>ID::{{customer.id}}</h3></em>
+    <em><h3>Name::{{customer.name}}</h3></em>
+<em><h3>Age::{{customer.age}}</h3></em>
+<em><h3>Checkin::{{customer.checkin}}</h3></em>
+    <em><h3>PhoneNO::{{customer.phoneno}}</h3></em>
+<em><h3>Reporting::{{customer.reporting}}</h3></em>
+    <a href="{% url 'hotelapp:update' pk=customer.id %}"><button type="button" class="btn btn-info">UPDATE</button></a>&nbsp;&nbsp;&nbsp;
+    <a href="{% url 'hotelapp:delete' pk=customer.id %}"><button type="button" class="btn btn-danger">DELETE</button></a><br/><br/>
+   </div>
+</div>
+
+
+</body>
+{% endblock %}
+</html>

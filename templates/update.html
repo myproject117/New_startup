@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    //<style>
+      //  input{
+        //     width:10%;
+          // }
+    //</style>
+</head>
+<body>
+<div class="container">
+<form method="post" enctype="multipart/form-data" class="form-horizontal">
+    <div class="form-group">
+        <div class="col-sm-3">{{form.as_p}}</div></div>
+    {% csrf_token %}
+    <input type="submit" value="UPDATE" class="btn btn-success"><br/>
+</form>
+</div>
+</body>
+ {% endblock %}
+</html>
